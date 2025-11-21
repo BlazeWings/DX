@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题库展示系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 题库展示系统</h1>
+        
+        <div class="nav-buttons">
+            <button onclick="showAllQuestions()">显示所有题目</button>
+            <button onclick="location.href='training.html'">专项训练</button>
+        </div>
+
+        <div id="question-display"></div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        // 页面加载时显示所有题目
+        window.onload = function() {
+            showAllQuestions();
+        };
+    </script>
+</body>
+</html>
